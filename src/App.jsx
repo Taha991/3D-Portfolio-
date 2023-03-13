@@ -7,7 +7,14 @@ import { Who } from "../components/Who"
 
 const Container = styled.div`
   height: 100vh;
-  background: red;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+  // to remove scroll icon ->
+  &::-webkit-scrollbar{
+    display: none;
+  }
 
 `;
  
