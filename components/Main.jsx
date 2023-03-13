@@ -1,18 +1,46 @@
 import React from 'react'
 import styled from "styled-components";
+import { Navbar } from './Navbar';
 
 
 const Section = styled.div`
-  height: 100%;
-  
-  // to go to middle every time i use scroll
+  height: 100vh;
   scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    height: 200vh;
+  }
+`;
+
+const Container = styled.div`
+  height: 100%;
+  scroll-snap-align: center;
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
 
+
 export const Main = () => {
   return (
-    <Section>Main</Section>
+    
+    <Section>
+      <Navbar />
+      <Container>
+
+      </Container>
+      
+    </Section>
+    
   )
 }

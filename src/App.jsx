@@ -11,6 +11,8 @@ const Container = styled.div`
   scroll-behavior: smooth;
   overflow-y: auto;
   scrollbar-width: none;
+
+  
   // to remove scroll icon ->
   &::-webkit-scrollbar{
     display: none;
