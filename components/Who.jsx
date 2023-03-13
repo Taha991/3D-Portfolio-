@@ -1,6 +1,8 @@
-import React from 'react'
+import React , { Suspense } from 'react'
 import styled from "styled-components";
-
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import Cube from "./Cube";
 
 const Section = styled.div`
   height: 100vh;
@@ -75,20 +77,34 @@ const Button = styled.button`
 export const Who = () => {
   return (
     <Section>
-<Container>
-  <Left>
-
-  </Left>
-<Right>
-          <Title>Think outside the Box</Title>
+      <Container>
+        <Left>
+          <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
+            <Suspense fallback={null}>
+              <ambientLight intensity={1.5} />
+              <directionalLight position={[3, 2, 1]} />
+              <Cube />
+              <OrbitControls enableZoom={false} autoRotate />
+            </Suspense>
+          </Canvas>
+        </Left>
+        <Right>
+          <Title>Skills</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>Who am i</Subtitle>
+            <Subtitle>What i can do</Subtitle>
           </WhatWeDo>
           <Desc>
-            
+           Microservices , ERP projects
+           
           </Desc>
-          <Button>See my work</Button>
+          <Desc>
+           ASP MVC , C# , React , Angler
+          </Desc>
+          <Desc>
+           WebApi , OOP
+          </Desc>
+          <Button>See our works</Button>
         </Right>
       </Container>
     </Section>

@@ -18,7 +18,7 @@ const Container = styled.div`
     display: none;
   }
 
-  color: white;
+  color: white; 
   background: url("./img/bg.jpeg");
 
 `;
@@ -32,8 +32,8 @@ function App() {
       <Container>
       <Main />
       <Who />
-      <Projects />
-      <Contact />
+      {/* <Projects /> */}
+      {/* <Contact /> */}
     </Container>
       
     
