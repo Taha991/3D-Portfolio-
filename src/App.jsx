@@ -12,7 +12,7 @@ const Container = styled.div`
   overflow-y: auto;
   scrollbar-width: none;
 
-  
+
   // to remove scroll icon ->
   &::-webkit-scrollbar{
     display: none;
@@ -30,11 +30,11 @@ function App() {
   return (
    
       <Container>
-      <Main/> 
-      <Who/>
-      <Projects/>
-      <Contact/>
-      </Container>
+      <Main />
+      <Who />
+      <Projects />
+      <Contact />
+    </Container>
       
     
   )
