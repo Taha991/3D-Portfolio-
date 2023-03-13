@@ -16,6 +16,9 @@ const Container = styled.div`
     display: none;
   }
 
+  color: white;
+  background: url("./img/bg.jpeg");
+
 `;
  
 
