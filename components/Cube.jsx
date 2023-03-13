@@ -6,7 +6,7 @@ const Cube = () => {
   const textRef = useRef();
   useFrame(
     (state) =>
-      (textRef.current.position.x = Math.sin(state.clock.elapsedTime) * 6)
+      (textRef.current.position.x = Math.sin(state.clock.elapsedTime) * 6.8)
   );
 
   return (
@@ -17,7 +17,7 @@ const Cube = () => {
           <PerspectiveCamera makeDefault position={[0, 0, 5]} />
           <color attach="background" args={["#dc9dcd"]} />
           <Text ref={textRef} fontSize={1} color="#555">
-            C# , ASP , API , REACT , ANGLER
+            C# , MVC , API , REACT , ANGLER , ASP
           </Text>
           
         </RenderTexture>
