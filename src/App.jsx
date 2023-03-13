@@ -7,11 +7,7 @@ import { Who } from "../components/Who"
 
 const Container = styled.div`
   height: 100vh;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow-y: auto;
-  scrollbar-width: none;
-  color: white;
+  background: red;
 
 `;
  
@@ -20,7 +16,7 @@ const Container = styled.div`
 function App() {
 
   return (
-    <div>
+   
       <Container>
       <Main/> 
       <Who/>
@@ -28,7 +24,7 @@ function App() {
       <Contact/>
       </Container>
       
-    </div>
+    
   )
 }
 
