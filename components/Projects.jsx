@@ -1,8 +1,8 @@
 
 import styled from "styled-components";
-// import Development from "./Development";
-// import ProductDesign from "./ProductDesign";
-// import WebDesign from "./WebDesign";
+import Development from "./Development";
+import ProductDesign from "./ProductDesign";
+import WebDesign from "./WebDesign";
 import React, { useState } from "react";
 
 

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
-import Map from "./Map";
+
 
 const Section = styled.div`
   height: 100vh;
@@ -72,6 +72,10 @@ const Right = styled.div`
 `;
 
 
+
+
+
+
 export const Contact = () => {
   const ref = useRef();
   const [success, setSuccess] = useState(null);
@@ -102,7 +106,7 @@ export const Contact = () => {
     <Container>
       <Left>
         <Form ref={ref} onSubmit={handleSubmit}>
-          <Title>Contact Us</Title>
+          <Title>Contact Me</Title>
           <Input placeholder="Name" name="name" />
           <Input placeholder="Email" name="email" />
           <TextArea
@@ -116,7 +120,7 @@ export const Contact = () => {
         </Form>
       </Left>
       <Right>
-        <Map />
+      
       </Right>
     </Container>
   </Section>

@@ -32,8 +32,8 @@ function App() {
       <Container>
       <Main />
       <Who />
-      {/* <Projects /> */}
-      {/* <Contact /> */}
+      <Projects />
+      <Contact />
     </Container>
       
     
