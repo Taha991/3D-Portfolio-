@@ -8,8 +8,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npm run build",
-    "preview": "vite preview",
+    "build": "vite build",
+    "preview": "npm run build &&vite preview",
     "serve": "npm run build && vite preview"
   },
   "dependencies": {
